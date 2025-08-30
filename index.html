@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Omi Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🔥 Omi Website</div>
+    <ul class="nav-links">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#video">Video</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Omi Website</h1>
+    <p>Confidence • Power • Style</p>
+  </header>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>🔥 Photo Gallery</h2>
+    <div class="grid">
+      <figure class="card"><img src="omi1.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi2.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi3.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi4.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi5.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi6.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi7.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi8.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi9.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi10.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi11.jpg" onclick="openLightbox(this)"></figure>
+      <figure class="card"><img src="omi12.jpg" onclick="openLightbox(this)"></figure>
+
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="video-sec">
+    <h2>🎥 Attitude in Motion</h2>
+    <video controls width="80%" poster="assets/images/WhatsApp Image 2025-08-30 at 08.26.00_0be86eba.jpg">
+      <source src="videoplayback.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
